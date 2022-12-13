@@ -1,0 +1,858 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Credit Card Clients Data Report}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+All data labeled "differentially private" in this document satisfies differential privacy for %
+$\epsilon$=0.1%
+0.1 by sequential composition%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The follwing statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14031.892713\newline%
+1    10589.718016\newline%
+3     4905.016075\newline%
+5      281.038729\newline%
+4      122.614982\newline%
+6       49.668510\newline%
+0       21.721556\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with their defaults as determined by using a differentially private method is default.payment.next.month\newline%
+0    61.828274\newline%
+1    17.828274\newline%
+Name: 0, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with their defaults as determined by using a differentially private method is default.payment.next.month\newline%
+0    61.828274\newline%
+1    17.828274\newline%
+Name: 0, dtype: float64.
+
+%
+\end{document}\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Credit Card Clients Data Report}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+All data labeled "differentially private" in this document satisfies differential privacy for %
+$\epsilon$=0.1%
+0.1 by sequential composition%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The follwing statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14032.610650\newline%
+1    10571.991148\newline%
+3     4914.056299\newline%
+5      286.788203\newline%
+4      100.968584\newline%
+6       36.791201\newline%
+0        7.675469\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with their defaults as determined by using a differentially private method is default.payment.next.month\newline%
+0    61.828274\newline%
+1    17.828274\newline%
+Name: 0, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with their defaults as determined by using a differentially private method is default.payment.next.month\newline%
+0    10466.087791\newline%
+1     3219.087791\newline%
+Name: 1, dtype: float64.
+
+%
+\end{document}\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Credit Card Clients Data Report}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+All data labeled "differentially private" in this document satisfies differential privacy for %
+$\epsilon$=0.1%
+0.1 by sequential composition%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The follwing statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14026.276046\newline%
+1    10589.042597\newline%
+3     4915.268093\newline%
+5      284.513180\newline%
+4      123.429038\newline%
+6       37.702757\newline%
+0        1.453225\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with their defaults as determined by using a differentially private method is MARRIAGE\newline%
+0      {-}2.620828\newline%
+1    3198.379172\newline%
+2    3333.379172\newline%
+3      76.379172\newline%
+Name: 1, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with their defaults as determined by using a differentially private method is MARRIAGE\newline%
+0       49.862495\newline%
+1    10453.862495\newline%
+2    12623.862495\newline%
+3      239.862495\newline%
+Name: 0, dtype: float64.
+
+%
+\end{document}\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Credit Card Clients Data Report}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+All data labeled "differentially private" in this document satisfies differential privacy for %
+$\epsilon$=0.1%
+0.1 by sequential composition%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The follwing statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14029.159825\newline%
+1    10570.483836\newline%
+3     4927.172493\newline%
+5      271.023005\newline%
+4       64.126550\newline%
+6       46.445330\newline%
+0       17.066962\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with their defaults as determined by using a differentially private method is MARRIAGE\newline%
+0      {-}2.620828\newline%
+1    3198.379172\newline%
+2    3333.379172\newline%
+3      76.379172\newline%
+Name: 1, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with their defaults as determined by using a differentially private method is MARRIAGE\newline%
+0       49.862495\newline%
+1    10453.862495\newline%
+2    12623.862495\newline%
+3      239.862495\newline%
+Name: 0, dtype: float64.
+
+%
+\end{document}\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Differentially Private Credit Card Clients Report from Taiwan}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+\section{Discussion}%
+\label{sec:Discussion}%
+\subsection{Privacy Budget}%
+\label{subsec:PrivacyBudget}%
+Overall in the document our epsilon value is 0.1, and from since we invoke the laplace mechanism 33 times, through sequential composition our total privacy budget would be 3.3
+
+%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The bill\_amt and limit\_bal differentially private average statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+Whereas the remaining averages and counts were calculated using the good old laplace mechanism or in the case of the averages, we used the method for choosing a clipping which does not require thousands of queries as displayed in Homework 4%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14029.121359\newline%
+1    10579.227509\newline%
+3     4922.588069\newline%
+5      333.617788\newline%
+4      121.249989\newline%
+6       53.200319\newline%
+0       13.037394\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with if they HAVE defaulted using a differentially private method is MARRIAGE\newline%
+0      {-}2.620828\newline%
+1    3198.379172\newline%
+2    3333.379172\newline%
+3      76.379172\newline%
+Name: 1, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with if they HAVE NOT defaulted using a differentially private method is MARRIAGE\newline%
+0       49.862495\newline%
+1    10453.862495\newline%
+2    12623.862495\newline%
+3      239.862495\newline%
+Name: 0, dtype: float64.
+
+%
+\end{document}\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Differentially Private Credit Card Clients Report from Taiwan}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+\section{Discussion}%
+\label{sec:Discussion}%
+\subsection{Privacy Budget}%
+\label{subsec:PrivacyBudget}%
+Overall in the document our epsilon value is 0.1, and from since we invoke the laplace mechanism 33 times, through sequential composition our total privacy budget would be 3.3
+
+%
+It should also be noted that reported dollar amounts are in the New Tiawan dollar
+
+%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The bill\_amt and limit\_bal differentially private average statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+Whereas the remaining averages and counts were calculated using the good old laplace mechanism or in the case of the averages, we used the method for choosing a clipping which does not require thousands of queries as displayed in Homework 4%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14078.058590\newline%
+1    10593.156495\newline%
+3     4939.390316\newline%
+5      289.617054\newline%
+4      133.421364\newline%
+6       43.721980\newline%
+0       23.977361\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with if they HAVE defaulted using a differentially private method is MARRIAGE\newline%
+0      {-}2.620828\newline%
+1    3198.379172\newline%
+2    3333.379172\newline%
+3      76.379172\newline%
+Name: 1, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with if they HAVE NOT defaulted using a differentially private method is MARRIAGE\newline%
+0       49.862495\newline%
+1    10453.862495\newline%
+2    12623.862495\newline%
+3      239.862495\newline%
+Name: 0, dtype: float64.
+
+%
+\end{document}\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Differentially Private Credit Card Clients Report from Taiwan}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+\section{Discussion}%
+\label{sec:Discussion}%
+It should also be noted that reported dollar amounts are in the New Tiawan dollar%
+\subsection{Privacy Budget}%
+\label{subsec:PrivacyBudget}%
+Overall in the document our epsilon value is 0.1, and from since we invoke the laplace mechanism 33 times, through sequential composition our total privacy budget would be 3.3
+
+%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The bill\_amt and limit\_bal differentially private average statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+Whereas the remaining averages and counts were calculated using the good old laplace mechanism or in the case of the averages, we used the method for choosing a clipping which does not require thousands of queries as displayed in Homework 4%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14024.106257\newline%
+1    10577.372423\newline%
+3     4909.482111\newline%
+5      286.884013\newline%
+4      156.077442\newline%
+6       50.492889\newline%
+0        5.034230\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with if they HAVE defaulted using a differentially private method is MARRIAGE\newline%
+0      {-}2.620828\newline%
+1    3198.379172\newline%
+2    3333.379172\newline%
+3      76.379172\newline%
+Name: 1, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with if they HAVE NOT defaulted using a differentially private method is MARRIAGE\newline%
+0       49.862495\newline%
+1    10453.862495\newline%
+2    12623.862495\newline%
+3      239.862495\newline%
+Name: 0, dtype: float64.
+
+%
+\end{document}\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+%
+\title{Differentially Private Credit Card Clients Report from Taiwan}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+\section{Discussion}%
+\label{sec:Discussion}%
+It should be noted that reported dollar amounts are in the New Tiawan dollar%
+\subsection{Privacy Budget}%
+\label{subsec:PrivacyBudget}%
+Overall in the document our epsilon value is 0.1, and from since we invoke the laplace mechanism 33 times, through sequential composition our total privacy budget would be 3.3
+
+%
+\section{Statistics}%
+\label{sec:Statistics}%
+\subsection{Basic Averages}%
+\label{subsec:BasicAverages}%
+The bill\_amt and limit\_bal differentially private average statistics were generated using the sparse vector technique to determine a clipping parameter for the data, and then generating differentially private sums and counts to find a differentially private average.%
+Whereas the remaining averages and counts were calculated using the good old laplace mechanism or in the case of the averages, we used the method for choosing a clipping which does not require thousands of queries as displayed in Homework 4%
+\subsubsection{Average Age}%
+\label{ssubsec:AverageAge}%
+The average age of all credit card clients is 30.86, the differentially private average age of all customers is 30.6. This gives an error of 0.82\%.
+
+%
+\subsubsection{Average Credit Limit Balance}%
+\label{ssubsec:AverageCreditLimitBalance}%
+The average credit card balance limit of all credit card customers is 167484.32, the differentially private average credit card balance limit of all customers is 90775.51. This gives an error of 45.8\%.
+
+%
+\subsubsection{Average Bill Amount}%
+\label{ssubsec:AverageBillAmount}%
+The average bill amount of all credit card customers for the month of September is 51223.33, the differentially private average bill amount of all customers is 34222.13. This gives an error of 33.19\%.%
+The average bill amount of all credit card customers for the month of August is 49179.08, the differentially private average bill amount of all customers is 40699.55. This gives an error of 17.24\%.%
+The average bill amount of all credit card customers for the month of July is 47013.15, the differentially private average bill amount of all customers is 13411.88. This gives an error of 71.47\%.%
+The average bill amount of all credit card customers for the month of June is 43262.95, the differentially private average bill amount of all customers is 23564.97. This gives an error of 45.53\%.%
+The average bill amount of all credit card customers for the month of May is 40311.4, the differentially private average bill amount of all customers is 28076.55. This gives an error of 30.35\%.%
+The average bill amount of all credit card customers for the month of April is 38871.76, the differentially private average bill amount of all customers is 16036.88. This gives an error of 58.74\%.
+
+%
+\subsubsection{Average Pay Amount}%
+\label{ssubsec:AveragePayAmount}%
+The average pay amount of all credit card customers for the month of September is 5663.58, the differentially private average pay amount of all customers is 5277.59. This gives an error of 6.82\%.%
+The average pay amount of all credit card customers for the month of August is 5921.16, the differentially private average pay amount of all customers is 5365.78. This gives an error of 9.38\%.%
+The average pay amount of all credit card customers for the month of July is 5225.68, the differentially private average pay amount of all customers is 4187.81. This gives an error of 19.86\%.%
+The average pay amount of all credit card customers for the month of June is 4826.08, the differentially private average pay amount of all customers is 4810.4. This gives an error of 0.32\%.%
+The average pay amount of all credit card customers for the month of May is 4799.39, the differentially private average pay amount of all customers is 5299.46. This gives an error of 10.42\%.%
+The average pay amount of all credit card customers for the month of April is 5215.5, the differentially private average pay amount of all customers is 3672.94. This gives an error of 29.58\%.
+
+%
+\subsection{Basic Counts}%
+\label{subsec:BasicCounts}%
+The follwing statistics were generated using the value counts function and applying the laplace mechanism as a lambda function to preserve the dataframe.%
+\subsubsection{Education Levels}%
+\label{ssubsec:EducationLevels}%
+The most common education level as determined by using a differentially private method is 2    14044.347263\newline%
+1    10580.409215\newline%
+3     4929.152502\newline%
+5      279.994818\newline%
+4      125.659004\newline%
+6       51.848004\newline%
+0       12.081679\newline%
+Name: EDUCATION, dtype: float64.
+
+%
+\subsection{Conditional Averages}%
+\label{subsec:ConditionalAverages}%
+\subsubsection{Average Monthly Payments of Male credit card clients}%
+\label{ssubsec:AverageMonthlyPaymentsofMalecreditcardclients}%
+The average monthly credit card payments of male customers is 4593.96 with differential privacy applied.
+
+%
+\subsubsection{Average Monthly Payments of Female credit card customers}%
+\label{ssubsec:AverageMonthlyPaymentsofFemalecreditcardcustomers}%
+The average monthly credit card payments of female customers is is 6809.12 with differential privacy applied.
+
+%
+\subsubsection{Average Bill Amount credit clients in Higher Education}%
+\label{ssubsec:AverageBillAmountcreditclientsinHigherEducation}%
+The average bill amount of all credit card customers in Higher Education is 28455.4 with differential privacy applied.
+
+%
+\subsection{Conditional Counts}%
+\label{subsec:ConditionalCounts}%
+\subsubsection{Most Common Marital Status with defalt 'YES'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltYES}%
+The comparison of marital status with if they HAVE defaulted using a differentially private method is MARRIAGE\newline%
+0      {-}2.620828\newline%
+1    3198.379172\newline%
+2    3333.379172\newline%
+3      76.379172\newline%
+Name: 1, dtype: float64.
+
+%
+\subsubsection{Most Common Marital Status with defalt 'NO'}%
+\label{ssubsec:MostCommonMaritalStatuswithdefaltNO}%
+The comparison of marital status with if they HAVE NOT defaulted using a differentially private method is MARRIAGE\newline%
+0       49.862495\newline%
+1    10453.862495\newline%
+2    12623.862495\newline%
+3      239.862495\newline%
+Name: 0, dtype: float64.
+
+%
+\end{document}
